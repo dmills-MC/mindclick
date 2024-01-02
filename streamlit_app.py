@@ -13,6 +13,6 @@ lst = ['Factory 1', 'Factory 2', 'Factory 3']
 for i in lst:
     st.markdown("- " + i)
 
-st.radio("Do you need to remove any of these factories for this year?", ['Yes', 'No'])
+st.radio("Do you need to remove any of these factories for this year?", ['No', 'Yes'])
 
-st.radio("Do you need to add any new factories for this year?", ['Yes', 'No'])
+st.radio("Do you need to add any new factories for this year?", ['No', 'Yes'])
