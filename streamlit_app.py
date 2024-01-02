@@ -4,7 +4,7 @@ import time
 sst.title('st.progress')
 
 with st.expander('About this app'):
-  st.write('You can now display the progress of your calculations in a Streamlit app with the 'st.progress' command.')
+  st.write('You can now display the progress of your calculations in a Streamlit app with the st.progress command.')
 
   my_bar = st.progress(0)
 
