@@ -14,13 +14,13 @@ for i in lst:
     st.markdown("- " + i)
 
 remove_factories = st.radio("Do you need to remove any of these factories for this year?", ['Yes', 'No'])
-if remove_factories = 'Yes':
+if remove_factories == 'Yes':
     st.text_input('Factory Name')
 else:
     st.write()
     
 add_factories = st.radio("Do you need to add any new factories for this year?", ['Yes', 'No'])
-if add_factories = 'Yes'"
+if add_factories == 'Yes'"
     st.text_input('Factory Name')
 else:
     st.write()
