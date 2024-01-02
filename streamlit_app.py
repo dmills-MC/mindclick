@@ -17,8 +17,8 @@ with st.form('my_form'):
   serving_type_val = st.selectbox('Serving format', ['Hot', 'Iced', 'Frappe'])
   milk_val = st.select_slider('Milk intensity', ['None', 'Low', 'Medium', 'High'])
   owncup_val = st.checkbox('Bring own cup')
-
-submitted = st.form_submit_button('Submit')
+  
+  submitted = st.form_submit_button('Submit')
 
 if submitted:
   st.markdown(f'''
