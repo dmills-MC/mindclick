@@ -15,4 +15,4 @@ if coffee:
         st.write("Okay, here's some coffee :coffee:")
 
 if cola:
-        st.write("Here you go :cola:")
+        st.write("Here you go :soda:")
