@@ -11,12 +11,12 @@ with st.form('my_form'):
   st.subheader('**Order your coffee**')
 
  # Input widgets
-    coffee_bean_val = st.selectbox('Coffee bean', ['Arabica', 'Robusta'])
-    coffee_roast_val = st.selectbox('Coffee roast', ['Light', 'Medium', 'Dark'])
-    brewing_val = st.selectbox('Brewing method', ['Aeropress', 'Drip', 'French press', 'Moka pot', 'Siphon'])
-    serving_type_val = st.selectbox('Serving format', ['Hot', 'Iced', 'Frappe'])
-    milk_val = st.select_slider('Milk intensity', ['None', 'Low', 'Medium', 'High'])
-    owncup_val = st.checkbox('Bring own cup')
+  coffee_bean_val = st.selectbox('Coffee bean', ['Arabica', 'Robusta'])
+  coffee_roast_val = st.selectbox('Coffee roast', ['Light', 'Medium', 'Dark'])
+  brewing_val = st.selectbox('Brewing method', ['Aeropress', 'Drip', 'French press', 'Moka pot', 'Siphon'])
+  serving_type_val = st.selectbox('Serving format', ['Hot', 'Iced', 'Frappe'])
+  milk_val = st.select_slider('Milk intensity', ['None', 'Low', 'Medium', 'High'])
+  owncup_val = st.checkbox('Bring own cup')
 
 submitted = st.form_submit_button('Submit')
 
