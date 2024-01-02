@@ -8,7 +8,7 @@ DataEnteredBy = st.text_input('Enter your name', "")
 Signature = st.text_input('Sign Here', "")
 
 st.header("Factory Overview")
-lst = ['a', 'b', 'c']
+lst = ['Factory 1', 'Factory 2', 'Factory 3']
 
 for i in lst:
-    st.markdown("- " + I)
+    st.markdown("- " + i)
