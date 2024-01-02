@@ -1,13 +1,11 @@
 import streamlit as st
 
-st.title('st.experimental_get_query_params')
+st.title("MSAP 2024 - Factory Data Collection")
 
-st.header('2. contents')
-st.write(st.experimental_get_query_params())
+DataEnteredBy = st.text_input
+Signature = st.text_input
 
-st.header('3. retrieve')
-
-firstname = st.experimental_get_query_params()['firstname'][0]
-surname = st.experimental_get_query_params()['surname'][0]
-
-st.write(f'Hello **{firstname} {surname}**')
+st.header("Company Info")
+    st.write("Company Name:", '[pre-populate]')
+    st.write("Data entered by:", DataEnteredBy)
+    st.write("Signature:", Signature)
