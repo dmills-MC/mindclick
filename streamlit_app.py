@@ -15,10 +15,11 @@ for i in lst:
     st.markdown("- " + i)
 
 st.header("Current Factories")
-pd.DataFrame({
+current_factories = pd.DataFrame({
     'Factory Name':['Factory 1', 'Factory 2', 'Factory 3']
-    num_rows="dynamic"
 })
+
+st.data_editor(current_factories)
 
 
 
