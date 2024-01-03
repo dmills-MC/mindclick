@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-browser.gatherUsageStats = False
-
 st.title("MSAP 2024 - Factory Data Collection")
 
 st.header("Company Info")
