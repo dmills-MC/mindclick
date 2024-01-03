@@ -29,11 +29,11 @@ st.data_editor(current_factories,
       "Is gas primarily used for heating?": st.column_config.SelectboxColumn(
         options=['Yes', 'No', 'N/A']),
       'Water is used for: Production': st.column_config.SelectboxColumn(
-        options:['Yes', 'No']),
+        options=['Yes', 'No']),
       'Water is used for: Housekeeping': st.column_config.SelectboxColumn(
-        options:['Yes', 'No']),
+        options=['Yes', 'No']),
       'Water is used for: Admin': st.column_config.SelectboxColumn(
-        options:['Yes', 'No'])
+        options=['Yes', 'No'])
     }
 )
 
