@@ -11,7 +11,7 @@ Signature = st.text_input('Sign Here', "")
 st.header("Current Factories")
 st.subheader("These are the factories we have from last year")
 st.write("- To remove a factory from this year's assessment - click the checkbox next to the name and select the delete icon")
-st.write("To add a new factory, enter the name in the last row")
+st.write("- To add a new factory, enter the name in the last row")
 current_factories = pd.DataFrame({
     'Factory Name':['Factory 1', 'Factory 2', 'Factory 3']
 })
