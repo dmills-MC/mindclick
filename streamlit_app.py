@@ -19,7 +19,10 @@ current_factories = pd.DataFrame({
     'Factory Name':['Factory 1', 'Factory 2', 'Factory 3']
 })
 
-st.data_editor(current_factories)
+st.data_editor(current_factories,
+    hide_index=True,
+    num_rows="dynamic"
+    )
 
 
 
