@@ -15,9 +15,16 @@ st.write("- To add a new factory, click the '+' icon in the last row and enter t
 st.write("- When you are done, click **Submit**")
 current_factories = pd.DataFrame({
     'Factory Name':['Factory 1', 'Factory 2', 'Factory 3']
+    'Is gas primarily used for heating?':
 })
 
 st.data_editor(current_factories,
     hide_index=True,
-    num_rows="dynamic"
+    num_rows="dynamic",
+    column_config={
+      "column 1": "Factory",
+      "column 2": "Is gas primarily used for heating?"
+    }
     )
+
+st.header("Foorprint Data")
