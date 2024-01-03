@@ -15,7 +15,10 @@ st.write("- To add a new factory, click the '+' icon in the last row and enter t
 st.write("- When you are done, click **Submit**")
 current_factories = pd.DataFrame({
     'Factory Name':['Factory 1', 'Factory 2', 'Factory 3'],
-    'Is gas primarily used for heating?':['']
+    'Is gas primarily used for heating?':['', '', ''],
+    'Water is used for: Production':['', '', ''],
+    'Water is used for: Housekeeping':['', '', ''],
+    'Water is used for: Admin':['', '', '']
 })
 
 st.data_editor(current_factories,
@@ -24,9 +27,14 @@ st.data_editor(current_factories,
     column_config={
       "column 1": "Factory",
       "Is gas primarily used for heating?": st.column_config.SelectboxColumn(
-        options=['Yes', 'No', 'N/A']
-      )
+        options=['Yes', 'No', 'N/A']),
+      'Water is used for: Production': st.column_config.SelectboxColumn(
+        options:['Yes', 'No']),
+      'Water is used for: Housekeeping': st.column_config.SelectboxColumn(
+        options:['Yes', 'No']),
+      'Water is used for: Admin': st.column_config.SelectboxColumn(
+        options:['Yes', 'No'])
     }
-    )
+)
 
 st.header("Foorprint Data")
