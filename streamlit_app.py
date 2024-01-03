@@ -22,9 +22,10 @@ st.data_editor(current_factories,
     num_rows="dynamic",
     column_config={
       "column 1": "Factory",
-      "column 2": "Is gas primarily used for heating?"
+      "Is gas primarily used for heating?": st.column_config.SelectboxColumn(
+        options=['Yes', 'No', 'N/A']
+      )
     }
     )
 
 st.header("Foorprint Data")
-
